@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-blue-600 text-white p-4 fixed top-0 w-full z-10" style="background-image: url('about.jpg');">
+        <div class="container mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold">Vishnu.</h1>
+            </div>
+            <nav class="space-x-4">
+                <button onclick="scrollToSection('home')" class="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded">Home</button>
+                <button onclick="scrollToSection('about')" class="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded">About</button>
+                <button onclick="scrollToSection('skills')" class="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded">Skills</button>
+                <button onclick="scrollToSection('projects')" class="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded">Projects</button>
+                <button onclick="scrollToSection('contact')" class="bg-blue-700 hover:bg-blue-800 text-white py-2 px-4 rounded">Contact</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="home" class="home flex items-center justify-center bg-cover bg-center" style="background-image: url('f.jpg');">
+            <div class="flex items-center w-full max-w-7xl mx-auto px-4 text-white">
+                <div>
+                    <h3 class="text-5xl font-bold mb-4">Vishnu Murthy</h3>
+                    <h1 class="text-xl mb-6">Web Developer</h1>
+                    <div class="flex space-x-6">
+                        <a href="https://www.linkedin.com/in/vishnu-murthy-mediboina" target="_blank">
+                            <img src="i1.png" alt="LinkedIn" class="w-12 h-12">
+                        </a>
+                        <a href="https://github.com/vishnu77ss" target="_blank">
+                            <img src="i2.png" alt="GitHub" class="w-12 h-12">
+                        </a>
+                        <a href="https://leetcode.com/u/vishnumurthy441/" target="_blank">
+                            <img src="i3.png" alt="LeetCode" class="w-12 h-12">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="section bg-cover bg-center text-white" style="background-color: #001825">
+            <div class="about-container w-full max-w-4xl mx-auto p-8 flex items-center">
+                <img src="p1.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mr-8">
+                <div class="text-lg">
+                    <h1 class="text-3xl font-bold mb-4">About Me</h1>
+                    <p>As a versatile professional with a strong foundation in C, C++, Python, and Data Structures and Algorithms (DSA), I bring a diverse skill set to any technical role. My expertise spans full stack development, including front-end technologies (HTML, CSS, JavaScript) and back-end systems (MySQL). Additionally, I possess skills in the MERN stack, leveraging ReactJS, Node.js, MongoDB, and Express.js. Known for my collaborative nature and teamwork skills, I consistently contribute to successful project outcomes and innovative solutions, making me a valuable asset to any organization.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="skills" class="section bg-cover bg-center text-white" style="background-image: url('f.jpg');">
+            <div class="skills-container w-full max-w-4xl mx-auto p-8 flex">
+                <div class="w-1/2">
+                    <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+                    <p class="text-lg">C</p>
+                    <p class="text-lg">C++</p>
+                    <p class="text-lg">Python</p>
+                    <p class="text-lg">SQL</p>
+                    <p class="text-lg">DSA</p>
+                    <p class="text-lg">Problem Solving</p>
+                </div>
+                <div class="w-1/2 pl-8">
+                    <h2 style="color:#00FF7F;" class="text-2xl font-semibold mb-4">My creative skills & experiences</h2>
+                    <p class="text-lg">I possess a comprehensive skill set encompassing HTML, CSS, PHP, JavaScript, SQL, Bootstrap, React.js, Node.js, and MongoDB, enabling me to create dynamic and visually stunning web applications. With HTML and CSS, I craft the structural backbone and style elements of websites with precision and elegance. Leveraging PHP and JavaScript, I add functionality and interactivity, ensuring seamless user experiences and dynamic content delivery. My SQL expertise allows me to efficiently manage databases, ensuring data integrity and accessibility. Additionally, my proficiency in Bootstrap empowers me to design responsive and mobile-friendly layouts, optimizing user experiences across devices. With the MERN stack (MongoDB, Express.js, React.js, Node.js), I build robust, full-stack web applications, seamlessly integrating front-end and back-end technologies for a comprehensive development experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="section bg-cover bg-center text-white" style="background-color: #001825">
+            <div class="projects-container w-full max-w-4xl mx-auto p-8">
+                <h2 class="text-2xl font-semibold mb-4" style="font-family: sans-serif;">Projects</h2>
+                <ul class="list-disc list-inside">
+                    <li>
+                        <strong style="color:#00FF7F; ">Project 1: Online E-commerce Shopping Platform</strong><br>
+                        <em>Technologies Used: HTML, CSS, JavaScript</em><br>
+                        Developed a user-friendly online shopping platform.<br>
+                        Implemented responsive design to ensure compatibility across various devices.<br>
+                        Integrated shopping cart functionality and dynamic product display.<br>
+                        Utilized JavaScript to handle form validations and interactive features.
+                    </li>
+                    <br>
+                   <br>
+                   <br>
+
+                    <li>
+                        <strong style="color:#00FF7F;">Project 2: Online Book Store</strong><br>
+                        <em>Technologies Used: HTML, CSS, JavaScript</em><br>
+                        Created an online bookstore for a seamless user experience.<br>
+                        Designed a clean, responsive UI that adapts to different screen sizes.<br>
+                        Implemented search and filter options to enhance user navigation.<br>
+                        Used JavaScript to manage book listings, cart operations, and user interactions.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="contact" class="section bg-cover bg-center text-white" style="background-image: url('f.jpg');">
+            <div class="contact-container w-full max-w-4xl mx-auto p-8">
+                <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+                <form id="contactForm">
+                    <div class="mb-4">
+                        <label for="name" class="block">Name</label>
+                        <input style="background-image: url('f.jpg');" type="text" id="name" class="w-full p-2 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block">Email</label>
+                        <input style="background-image: url('f.jpg');" type="email" id="email" class="w-full p-2 border border-gray-300 rounded-md" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block">Message</label>
+                        <textarea style="background-image: url('f.jpg');" id="message" class="w-full p-2 border border-gray-300 rounded-md" rows="4" required></textarea>
+                    </div>
+                    <button style="background-color: #00FF7F; color: black;" class="bg-blue-600 text-white p-2 rounded-md">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <p>&copy; 2024 Vishnu Murthy</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
